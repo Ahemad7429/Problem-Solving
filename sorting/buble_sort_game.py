@@ -6,9 +6,9 @@ class Solution:
        if(aSwap == bSwap):
            print("Tie")
        elif (aSwap < bSwap):
-           print(str(a))
+           print(a)
        else:
-           print(str(b))
+           print(b)
 
     
     def buble_sort_swap(self, arr, n):
