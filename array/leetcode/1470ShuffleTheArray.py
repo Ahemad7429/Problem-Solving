@@ -24,3 +24,11 @@
 # 1 <= n <= 500
 # nums.length == 2n
 # 1 <= nums[i] <= 10^3
+
+class Solution:
+    def shuffle(self, nums, n):
+        for i in range(len(nums)):
+            j = i+1
+            while (j < len(nums)):
+                
+                j += 2

@@ -38,7 +38,7 @@
 # X--: X is decremented by 1, X = 1 - 1 = 0.
 
 class Solution:
-    def finalValueAfterOperations(self, operations: List[str]) -> int:
+    def finalValueAfterOperations(self, operations) -> int:
         x = 0
         for i in range(len(operations)):
             if(operations[i][1] == "+"):
