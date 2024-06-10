@@ -26,3 +26,16 @@
 # 1000 <= num <= 9999
 
 
+def minimumSum(num: int) -> int:
+    digits = list(map(int, str(num)))
+    digits.sort()
+    
+    # Forming two numbers from the sorted digits
+    num1 = digits[0] * 10 + digits[2]
+    num2 = digits[1] * 10 + digits[3]
+    
+    return num1 + num2
+
+# Example usage
+print(minimumSum(2932))  # Output: 52
+print(minimumSum(4009))  # Output: 13
